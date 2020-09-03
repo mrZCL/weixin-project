@@ -1,2 +1,14 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+
+<w-tab-control titles="{{['流行','新款','精选']}}"
+                bind:itemclick="handleTabClick"/>
+
+<!-- 修改组件数据 -->
+<button size="mini" bind:tap="handleIncrementCpn">修改组件内部数据</button>
+<my-sel id="sel-id"/>
+
+<view>--------------插槽</view>
+
+<my-mslot>
+<button size="mini" slot="slot2">9</button>
+<slider value="30" slot="slot3"></slider>
+</my-mslot>

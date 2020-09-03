@@ -1,4 +1,4 @@
-// pages/home/home.js
+// pages/profile/profile.js
 Page({
 
   /**
@@ -8,20 +8,6 @@ Page({
 
   },
 
-  handleTabClick(event){
-    console.log(event)
-  },
-
-  // 修改组件数据方法
-  handleIncrementCpn(){
-    //获取组件对象
-    const my_sel = this.selectComponent('#sel-id')
-    // 获取组件修改组件数据
-    // my_sel.setData({
-    //   count: my_sel.data.count + 20
-    // })
-    my_sel.incrementCount(1);
-  },
   /**
    * 生命周期函数--监听页面加载
    */
